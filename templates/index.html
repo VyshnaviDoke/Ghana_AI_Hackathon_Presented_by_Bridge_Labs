@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Smart Agriculture: Crop Disease Detection</h1>
+    <h3>AI model to detect and classify crop diseases affecting key Ghanaian crops (cashew, cassava, maize, tomato) using images from smartphones or drones.</h3>
+    <h6>Upload an Image</h6>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required><br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+<!-- Display uploaded image -->
+    {% if image_url %}
+        <h3>Uploaded Image:</h3>
+        <img src="{{ image_url }}" alt="Uploaded Image" width="300px">
+    {% endif %}
+
+<!-- Display prediction -->
+    {% if prediction %}
+        <div class="prediction">{{ prediction }}</div>
+    {% endif %}
+</body>
+</html>
