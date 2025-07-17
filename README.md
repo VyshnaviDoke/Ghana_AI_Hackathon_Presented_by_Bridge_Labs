@@ -1,0 +1,1 @@
+# Ghana_AI_Hackathon_Presented_by_Bridge_Labs
