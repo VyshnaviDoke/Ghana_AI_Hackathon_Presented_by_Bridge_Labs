@@ -10,15 +10,15 @@ Features
 Here is the dataset download link https://www.kaggle.com/datasets/rahimanshu/ccmt-plant-disease-dataset
 
 Project Structure
-├── app.py # Flask backend
-├── model.h5 # Trained Keras model
-├── static/
-│ └── style.css # Stylesheet
-  └── uploads
-  └── bkgimg # backgroundimage
-├── templates/
-│ └── index.html # Frontend page
-├── requirements.txt # Python dependencies
+1. ├── app.py # Flask backend
+2. ├── model.h5 # Trained Keras model
+3. ├── static/
+   └── style.css # Stylesheet
+   └── uploads
+   └── bkgimg # backgroundimage
+4. ├── templates/
+   └── index.html # Frontend page
+5. ├── requirements.txt # Python dependencies
 
 How to Run Locally
 
@@ -26,9 +26,9 @@ How to Run Locally
 2. Create a Virtual Environment
    python -m venv venv
    venv\Scripts\activate
-3.Install Dependencies
+3. Install Dependencies
 Make sure you have pip installed
    pip install -r requirements.txt
-4.Run the Project
+4. Run the Project
    python app.py
 
